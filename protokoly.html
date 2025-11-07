@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protokoły i Adresowanie Sieci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌐 Sieci Komputerowe</h1>
+        <p class="subtitle">Poznaj fundamenty nowoczesnych sieci</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Strona Główna</a></li>
+                <li><a href="topologia.html" class="nav-link">Topologia i Budowa</a></li>
+                <li><a href="protokoly.html" class="nav-link active">Protokoły i Adresowanie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content">
+            <h2>Protokoły Transmisyjne i Adresowanie Sieci</h2>
+            
+            <article>
+                <h3>Co to jest protokół sieciowy?</h3>
+                <p>Protokół sieciowy to zbiór reguł i standardów definiujących, w jaki sposób dane są przesyłane między urządzeniami w sieci. Protokoły zapewniają, że wszystkie urządzenia mogą się komunikować niezależnie od producenta.</p>
+            </article>
+
+            <article>
+                <h3>Model OSI</h3>
+                <img src="images/model-osi.jpg" alt="Model OSI" class="content-image">
+                <p>Model OSI (Open Systems Interconnection) opisuje siedem warstw komunikacji sieciowej:</p>
+                <ol>
+                    <li><strong>Warstwa Fizyczna:</strong> Transmisja bitów przez kable</li>
+                    <li><strong>Warstwa Łącza Danych:</strong> MAC adresy, przełączanie ramek</li>
+                    <li><strong>Warstwa Sieciowa:</strong> IP adresy, routing</li>
+                    <li><strong>Warstwa Transportu:</strong> TCP i UDP</li>
+                    <li><strong>Warstwa Sesji:</strong> Zarządzanie połączeniami</li>
+                    <li><strong>Warstwa Prezentacji:</strong> Szyfrowanie, kompresja</li>
+                    <li><strong>Warstwa Aplikacji:</strong> HTTP, FTP, Email</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Główne Protokoły</h3>
+
+                <h4>TCP/IP (Transmission Control Protocol/Internet Protocol)</h4>
+                <img src="images/tcp-ip.jpg" alt="Protokół TCP/IP" class="content-image">
+                <p>TCP/IP to podstawowa rodzina protokołów używana w Internecie. IP obsługuje adresowanie i routing, a TCP zapewnia niezawodną dostawę danych.</p>
+                <ul>
+                    <li><strong>TCP:</strong> Niezawodny, gwarancja dostarczenia (Email, Web)</li>
+                    <li><strong>UDP:</strong> Szybki, bez gwarancji dostarczenia (Video, VoIP)</li>
+                </ul>
+
+                <h4>HTTP/HTTPS (HyperText Transfer Protocol)</h4>
+                <p>Protokoły warstwy aplikacji używane do przesyłania stron internetowych. HTTPS jest wersją szyfrowaną.</p>
+
+                <h4>DNS (Domain Name System)</h4>
+                <p>Tłumaczy nazwę domeny (np. google.com) na adres IP (np. 142.251.41.14).</p>
+
+                <h4>DHCP (Dynamic Host Configuration Protocol)</h4>
+                <p>Automatycznie przydzielaj adresy IP urządzeniom w sieci.</p>
+            </article>
+
+            <article>
+                <h3>Adresowanie IP</h3>
+
+                <h4>Adresy IPv4</h4>
+                <img src="images/ipv4.jpg" alt="Adresy IPv4" class="content-image">
+                <p>Adres IPv4 składa się z czterech oktetu (32 bity), np. 192.168.1.1</p>
+                <p><strong>Klasy adresów:</strong></p>
+                <ul>
+                    <li><strong>Klasa A:</strong> 1.0.0.0 - 126.255.255.255</li>
+                    <li><strong>Klasa B:</strong> 128.0.0.0 - 191.255.255.255</li>
+                    <li><strong>Klasa C:</strong> 192.0.0.0 - 223.255.255.255</li>
+                    <li><strong>Klasa D:</strong> 224.0.0.0 - 239.255.255.255 (Multicast)</li>
+                    <li><strong>Klasa E:</strong> 240.0.0.0 - 255.255.255.255 (Zarezerwowana)</li>
+                </ul>
+
+                <h4>Maski Podsieci</h4>
+                <p>Maska podsieci określa, która część adresu IP jest adresem sieci, a która adresem hosta. Przykład: 255.255.255.0</p>
+
+                <h4>Adresy Prywatne</h4>
+                <p>Adresy zarezerwowane do użytku w sieciach prywatnych (nie można ich używać w Internecie):</p>
+                <ul>
+                    <li>10.0.0.0 - 10.255.255.255</li>
+                    <li>172.16.0.0 - 172.31.255.255</li>
+                    <li>192.168.0.0 - 192.168.255.255</li>
+                </ul>
+
+                <h4>IPv6</h4>
+                <img src="images/ipv6.jpg" alt="Adresy IPv6" class="content-image">
+                <p>Nowy standard adresowania IP z 128-bitową przestrzenią adresową. Znacznie więcej dostępnych adresów niż IPv4. Format: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</p>
+            </article>
+
+            <article>
+                <h3>NAT (Network Address Translation)</h3>
+                <p>NAT pozwala urządzeniom w sieci prywatnej na komunikację z Internetem przy użyciu jednego publicznego adresu IP. Chroni również wewnętrzne adresy IP.</p>
+            </article>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="topologia.html" class="nav-btn">← Wróć do Topologii</a>
+            <a href="index.html" class="nav-btn">Strona Główna →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sieci Komputerowe. Wszystkie prawa zastrzeżone.</p>
+        <p>Strona edukacyjna poświęcona informatyce i sieciach komputerowych</p>
+    </footer>
+</body>
+</html>
