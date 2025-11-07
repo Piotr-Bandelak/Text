@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topologia i Budowa Sieci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌐 Sieci Komputerowe</h1>
+        <p class="subtitle">Poznaj fundamenty nowoczesnych sieci</p>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Strona Główna</a></li>
+                <li><a href="topologia.html" class="nav-link active">Topologia i Budowa</a></li>
+                <li><a href="protokoly.html" class="nav-link">Protokoły i Adresowanie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content">
+            <h2>Topologia i Budowa Sieci</h2>
+            
+            <article>
+                <h3>Czym jest topologia sieciowa?</h3>
+                <p>Topologia sieciowa opisuje fizyczne i logiczne rozmieszczenie komputerów i urządzeń w sieci. Określa, w jaki sposób urządzenia są połączone między sobą.</p>
+            </article>
+
+            <article>
+                <h3>Rodzaje Topologii</h3>
+                
+                <h4>1. Topologia Gwiazdy (Star)</h4>
+                <img src="images/topologia-gwiazda.jpg" alt="Topologia Gwiazdy" class="content-image">
+                <p>W topologii gwiazdy wszystkie urządzenia podłączone są do centralnego urządzenia (przełącznika lub routera). Jest to najpopularniejsza topologia w nowoczesnych sieciach.</p>
+                <ul>
+                    <li><strong>Zalety:</strong> Łatwa diagnoza błędów, prosta rozbudowa</li>
+                    <li><strong>Wady:</strong> Awaria urządzenia centralnego powoduje awarię całej sieci</li>
+                </ul>
+
+                <h4>2. Topologia Pierścienia (Ring)</h4>
+                <img src="images/topologia-pierscien.jpg" alt="Topologia Pierścienia" class="content-image">
+                <p>Urządzenia połączone są w zamknięty pierścień, gdzie każde urządzenie ma dwóch sąsiadów. Dane podróżują w jednym kierunku wokół pierścienia.</p>
+                <ul>
+                    <li><strong>Zalety:</strong> Wyrównane obciążenie sieci</li>
+                    <li><strong>Wady:</strong> Złożona rozbudowa, awaria jednego łącza może zaburzyć funkcjonowanie</li>
+                </ul>
+
+                <h4>3. Topologia Magistrali (Bus)</h4>
+                <img src="images/topologia-magistrala.jpg" alt="Topologia Magistrali" class="content-image">
+                <p>Wszystkie urządzenia podłączone są do jednego głównego kabla (magistrali). Podatna na kolizje, używana w starszych sieciach.</p>
+                <ul>
+                    <li><strong>Zalety:</strong> Prosta i tania</li>
+                    <li><strong>Wady:</strong> Niska wydajność, trudna diagnoza błędów</li>
+                </ul>
+
+                <h4>4. Topologia Pełna Siatka (Full Mesh)</h4>
+                <img src="images/topologia-siatka.jpg" alt="Topologia Pełnej Siatki" class="content-image">
+                <p>Każde urządzenie bezpośrednio połączone z każdym innym urządzeniem. Bardzo niezawodna, ale droga i skomplikowana.</p>
+                <ul>
+                    <li><strong>Zalety:</strong> Wysoka niezawodność, bez wąskich gardeł</li>
+                    <li><strong>Wady:</strong> Droga, skomplikowana, wymaga wielu połączeń</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Komponenty Sieci</h3>
+                <img src="images/komponenty-sieci.jpg" alt="Komponenty Sieci" class="content-image">
+                <ul>
+                    <li><strong>Router:</strong> Urządzenie kierujące ruchem danych między sieciami</li>
+                    <li><strong>Przełącznik (Switch):</strong> Łączy urządzenia w obrębie jednej sieci</li>
+                    <li><strong>Serwer:</strong> Komputer udostępniający zasoby innym urządzeniom</li>
+                    <li><strong>Klient:</strong> Urządzenie pobierające zasoby z serwera</li>
+                    <li><strong>Kable sieciowe:</strong> Łączą urządzenia physycznie (Ethernet, światłowód)</li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="nav-btn">← Wróć do Strony Głównej</a>
+            <a href="protokoly.html" class="nav-btn">Przejdź do Protokołów →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sieci Komputerowe. Wszystkie prawa zastrzeżone.</p>
+        <p>Strona edukacyjna poświęcona informatyce i sieciach komputerowych</p>
+    </footer>
+</body>
+</html>
